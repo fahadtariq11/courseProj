@@ -1,0 +1,115 @@
+/* General Styles */
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway Dots', cursive;
+    background:white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; /* Prevents overflow due to large image */
+  }
+  
+  /* Not Found Container */
+  .notFoundContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 50px;
+    text-align: right;
+  }
+  
+  /* Wobbly Font Animation */
+  @keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .wobblyFont {
+    font-family: 'Fredoka One', sans-serif; /* Example of wobbly font */
+    display: inline-block;
+    animation: wobble 1s ease-in-out infinite;
+  }
+  
+  /* Styling for the Error Text */
+  .errorText {
+    color: #ff5722;
+    font-family: 'Raleway Dots', cursive;
+ /* Red color */
+    font-size: 60px;
+  }
+  
+  .codeText {
+    color: #3f51b5;
+    font-family: 'Raleway Dots', cursive;
+ /* Blue color */
+    font-size: 80px;
+  }
+  
+  /* Paragraph Styling */
+  .paragraphStyle {
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .paragraphStyle b {
+    font-weight: bold;
+  }
+  
+  /* Buttons Container */
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  /* Button Styles */
+  .bigButton {
+    background-color: red; /* Red background for buttons */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bigButton:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  /* Styling the Image */
+  .notFoundImage {
+    width: 600px; /* Larger image size */
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .notFoundContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .notFoundImage {
+      width: 250px; /* Adjust image size for smaller screens */
+    }
+  
+    .bigButton {
+      width: 100%;
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  
